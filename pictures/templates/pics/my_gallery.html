@@ -8,17 +8,28 @@
       <div class="row">
     
         {% for image in images %}
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 padding-0 hover ">
+<!--          
+        <div class="gallery">
+          <a target="#{{img.id}}" href="{{image.image.url}}">
+            <img src="{{image.image.url}}"  alt="Cinque Terre" width="600" height="400" class="img img-responsive" data-toggle="modal" >
+          </a>
+          <div class="desc">{{image.description}}</div>
+        </div> -->
+        
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 padding-0 hover ">
             <img src="{{image.image.url}}" class=" img img-responsive" data-toggle="modal" data-target="#{{image.id}}"       >
+           <div class="desc">{{image.description}}</div>
           </div>
 
 
-      <!-- Modal -->
+          <!-- Modal -->
+
       <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header text-center">
               <h3 class="modal-title" id="exampleModalLongTitle">{{image.title}}</h3>
+              <br>
               <h4 class="modal-title">{{image.location}}</h4>
               
 

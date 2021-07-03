@@ -1,6 +1,6 @@
 from django.shortcuts import render
-#import images
-from models import Images
+import pictures
+from pictures.models import Images
 from django.shortcuts import render
 from django.http  import HttpResponse,Http404
 from decouple import config,Csv
@@ -39,4 +39,4 @@ def search_results(request):
 
 
 
-# Create your views here.
+

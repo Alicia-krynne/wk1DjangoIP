@@ -5,6 +5,12 @@ MACRINE ALICE ADHIAMBO [https://github.com/Alicia-krynne]
 # Description
 This is an apllication that allows users to add images of their  favorite things and display them in a gallery. 
 
+### SCREENSHOTS 
+![admin page](img/adminpage.png)
+![Home Page](img/Homepage.png)
+![gallery](img/gallery.png)
+![Modal](img/Modal.png)
+
 ## CLONNG THE  REPOSITORY:
 https://github.com/Alicia-krynne/wk1DjangoIP.git
 Move to the folder and install requirements
